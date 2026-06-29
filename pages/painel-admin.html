@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo | PaisNeurodivergentes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo"><span class="logo-icon">👨‍👩‍👧</span><span>PaisNeurodivergentes</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="painel-admin.html" class="active">Painel Admin</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><a href="diretorio.html">Diretório</a></li>
+          <li><a href="proposta-de-valor.html">Proposta de Valor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-avatar" style="background: linear-gradient(135deg, #6366f1, #818cf8);">🛡️</div>
+        <div class="sidebar-user-info">
+          <h4>Carlos Mendes</h4>
+          <p>Admin • Acesso total</p>
+        </div>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active"><span class="icon">🏠</span> Visão geral</a></li>
+        <li><a href="#"><span class="icon">👥</span> Usuários (2.847)</a></li>
+        <li><a href="#"><span class="icon">👩‍⚕️</span> Credenciais (37)</a></li>
+        <li><a href="diretorio.html"><span class="icon">📍</span> Diretório (342)</a></li>
+        <li><a href="forum.html"><span class="icon">💬</span> Moderação</a></li>
+        <li><a href="base-conhecimento.html"><span class="icon">📚</span> Conteúdo</a></li>
+        <li><a href="#"><span class="icon">📊</span> Analytics</a></li>
+        <li><a href="#"><span class="icon">💰</span> Financeiro</a></li>
+        <li><a href="#"><span class="icon">🔒</span> Segurança &amp; LGPD</a></li>
+        <li><a href="#"><span class="icon">🚀</span> Roadmap</a></li>
+        <li><a href="#"><span class="icon">⚙️</span> Configurações</a></li>
+        <li><a href="../index.html"><span class="icon">🚪</span> Sair</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard-main" id="main">
+      <div class="dashboard-header">
+        <h1>Painel Administrativo 🛡️</h1>
+        <p>Visão geral da operação do PaisNeurodivergentes. Última atualização: agora.</p>
+      </div>
+
+      <!-- KPIs -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-value">2.847</div>
+          <p class="stat-label">Usuários ativos</p>
+          <span class="stat-change">+247 esta semana</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">37</div>
+          <p class="stat-label">Profissionais verificados</p>
+          <span class="stat-change">+3 esta semana</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">342</div>
+          <p class="stat-label">Serviços no diretório</p>
+          <span class="stat-change">+12 esta semana</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">99.8%</div>
+          <p class="stat-label">Uptime</p>
+          <span class="stat-change">SLA cumprido ✓</span>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div>
+          <!-- Verificações pendentes -->
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">⚠️ Pendências de credencial (7)</h3>
+
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Dra. Camila Torres — Terapeuta Ocupacional</div>
+                  <div class="list-item-meta">
+                    <span>CREFITO 5/12345</span>
+                    <span>Documentos enviados há 2 dias</span>
+                  </div>
+                </div>
+                <span class="badge badge-warm">Aguardando</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">✓ Aprovar</button>
+                <button class="btn btn-ghost btn-small">Pedir mais docs</button>
+                <button class="btn btn-ghost btn-small">✗ Reprovar</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Espaço Crescer — Clínica Multidisciplinar</div>
+                  <div class="list-item-meta">
+                    <span>CNPJ 12.345.678/0001-90</span>
+                    <span>Documentos enviados há 5 dias</span>
+                  </div>
+                </div>
+                <span class="badge badge-coral">Urgente</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">✓ Aprovar</button>
+                <button class="btn btn-ghost btn-small">Pedir mais docs</button>
+                <button class="btn btn-ghost btn-small">✗ Reprovar</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: 0;">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Dr. Rafael Souza — Psicólogo</div>
+                  <div class="list-item-meta">
+                    <span>CRP 06/98765</span>
+                    <span>Documentos enviados há 1 dia</span>
+                  </div>
+                </div>
+                <span class="badge badge-warm">Aguardando</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">✓ Aprovar</button>
+                <button class="btn btn-ghost btn-small">Pedir mais docs</button>
+                <button class="btn btn-ghost btn-small">✗ Reprovar</button>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-ghost btn-block mt-4">Ver todas as 7 pendências</a>
+          </article>
+
+          <!-- Moderação -->
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">🚨 Alertas de moderação (3 críticos)</h3>
+
+            <div class="list-item" style="border-left: 4px solid var(--color-danger); margin-bottom: var(--space-2);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">"Método X cura autismo" — Reportado por 12 usuários</div>
+                  <div class="list-item-meta">
+                    <span>🚨 Pseudotratamento / desinformação</span>
+                  </div>
+                </div>
+                <span class="badge badge-coral">CRÍTICO</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap;">
+                <button class="btn btn-primary btn-small">Remover e banir usuário</button>
+                <button class="btn btn-secondary btn-small">Apenas remover</button>
+                <button class="btn btn-ghost btn-small">Encaminhar para Dra. Ana Beatriz</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="border-left: 4px solid var(--color-secondary); margin-bottom: var(--space-2);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Discussão acalorada sobre medicação</div>
+                  <div class="list-item-meta">
+                    <span>⚠️ Linguagem ofensiva entre 2 usuários</span>
+                  </div>
+                </div>
+                <span class="badge badge-warm">Médio</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-secondary btn-small">Mediar com profissional</button>
+                <button class="btn btn-ghost btn-small">Silenciar temporariamente</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="border-left: 4px solid var(--color-warning); margin-bottom: 0;">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Possível divulgação de serviço não verificado</div>
+                  <div class="list-item-meta">
+                    <span>⚠️ Link suspeito no corpo do post</span>
+                  </div>
+                </div>
+                <span class="badge badge-warm">Verificar</span>
+              </div>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">Investigar</button>
+                <button class="btn btn-ghost btn-small">Marcar como falso positivo</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Analytics -->
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">📊 Métricas de uso (últimos 7 dias)</h3>
+            <div class="grid grid-3" style="gap: var(--space-4);">
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Posts no fórum</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">428</p>
+                <p style="font-size: 0.8125rem; color: var(--color-success); margin: 0;">+18% vs. semana anterior</p>
+              </div>
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Buscas no diretório</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">1.247</p>
+                <p style="font-size: 0.8125rem; color: var(--color-success); margin: 0;">+34% vs. semana anterior</p>
+              </div>
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Artigos lidos</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">2.103</p>
+                <p style="font-size: 0.8125rem; color: var(--color-success); margin: 0;">+22% vs. semana anterior</p>
+              </div>
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Monitoramentos iniciados</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">89</p>
+                <p style="font-size: 0.8125rem; color: var(--color-success); margin: 0;">+12% vs. semana anterior</p>
+              </div>
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Famílias em Fase 01 (novas)</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">127</p>
+                <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Principal porta de entrada</p>
+              </div>
+              <div>
+                <p class="text-soft" style="font-size: 0.875rem;">Lacunas geográficas</p>
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">14</p>
+                <p style="font-size: 0.8125rem; color: var(--color-danger); margin: 0;">Estados sem profissionais</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Coluna lateral -->
+        <div>
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">⚡ Ações rápidas</h3>
+            <div style="display: grid; gap: var(--space-2);">
+              <a href="#" class="btn btn-primary btn-block">👥 Gerenciar usuários</a>
+              <a href="forum.html" class="btn btn-secondary btn-block">💬 Moderar fórum</a>
+              <a href="diretorio.html" class="btn btn-secondary btn-block">📍 Auditar diretório</a>
+              <a href="#" class="btn btn-secondary btn-block">📊 Ver analytics completo</a>
+              <a href="#" class="btn btn-ghost btn-block">🚀 Atualizar roadmap</a>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">🔒 Segurança &amp; LGPD</h3>
+            <ul class="persona-tasks" style="font-size: 0.875rem;">
+              <li>0 incidentes de segurança nos últimos 30 dias</li>
+              <li>100% dos dados sensíveis criptografados</li>
+              <li>14 pedidos de exportação de dados (LGPD)</li>
+              <li>3 pedidos de exclusão processados</li>
+              <li>2 auditorias externas pendentes</li>
+            </ul>
+            <a href="#" class="btn btn-secondary btn-block mt-4">Abrir painel de segurança</a>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">🚀 Roadmap em destaque</h3>
+            <div class="list-item" style="margin-bottom: var(--space-2); padding: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+                <strong style="font-size: 0.9375rem;">Feedback por Vídeo</strong>
+                <span class="badge badge-warm">V2 • 60%</span>
+              </div>
+              <p style="font-size: 0.8125rem; margin: 0;">Sprint atual: integrações com WhatsApp</p>
+              <div style="height: 6px; background: var(--color-bg-alt); border-radius: 3px; margin-top: var(--space-2); overflow: hidden;">
+                <div style="width: 60%; height: 100%; background: var(--color-secondary);"></div>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: var(--space-2); padding: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+                <strong style="font-size: 0.9375rem;">Mentoria Parental</strong>
+                <span class="badge badge-primary">V2 • 30%</span>
+              </div>
+              <p style="font-size: 0.8125rem; margin: 0;">Sprint atual: fluxo de match</p>
+              <div style="height: 6px; background: var(--color-bg-alt); border-radius: 3px; margin-top: var(--space-2); overflow: hidden;">
+                <div style="width: 30%; height: 100%; background: var(--color-primary);"></div>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: 0; padding: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+                <strong style="font-size: 0.9375rem;">Gamificação</strong>
+                <span class="badge badge-coral">V2 • 10%</span>
+              </div>
+              <p style="font-size: 0.8125rem; margin: 0;">Sprint atual: design dos selos</p>
+              <div style="height: 6px; background: var(--color-bg-alt); border-radius: 3px; margin-top: var(--space-2); overflow: hidden;">
+                <div style="width: 10%; height: 100%; background: var(--color-accent);"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PaisNeurodivergentes • Logado como Carlos Mendes (Admin) • Acesso total</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

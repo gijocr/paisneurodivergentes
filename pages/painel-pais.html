@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Painel | PaisNeurodivergentes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo"><span class="logo-icon">👨‍👩‍👧</span><span>PaisNeurodivergentes</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="painel-pais.html" class="active">Meu painel</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><a href="diretorio.html">Diretório</a></li>
+          <li><a href="monitoramento.html">Monitoramento</a></li>
+          <li><a href="proposta-de-valor.html">Proposta de Valor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-avatar">👩</div>
+        <div class="sidebar-user-info">
+          <h4>Maria Silva</h4>
+          <p>Mãe do Pedro (7 anos)</p>
+        </div>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active"><span class="icon">🏠</span> Início</a></li>
+        <li><a href="forum.html"><span class="icon">💬</span> Fórum Pais-para-Pais</a></li>
+        <li><a href="diretorio.html"><span class="icon">📍</span> Diretório</a></li>
+        <li><a href="monitoramento.html"><span class="icon">📊</span> Monitoramento</a></li>
+        <li><a href="base-conhecimento.html"><span class="icon">📚</span> Base de Conhecimento</a></li>
+        <li><a href="#"><span class="icon">📅</span> Agenda</a></li>
+        <li><a href="#"><span class="icon">📝</span> Meu Diário</a></li>
+        <li><a href="#"><span class="icon">👨‍👩‍👧</span> Perfis da família</a></li>
+        <li><a href="#"><span class="icon">⭐</span> Favoritos</a></li>
+        <li><a href="#"><span class="icon">⚙️</span> Configurações</a></li>
+        <li><a href="../index.html"><span class="icon">🚪</span> Sair</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="dashboard-main" id="main">
+      <div class="dashboard-header">
+        <h1>Olá, Maria 💚</h1>
+        <p>Você está na <strong>Fase 02 — Navegação &amp; Planejamento</strong>. Veja o que preparamos para você hoje.</p>
+      </div>
+
+      <!-- KPIs -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-value">14</div>
+          <p class="stat-label">Dias de monitoramento</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">6</div>
+          <p class="stat-label">Serviços favoritos</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3</div>
+          <p class="stat-label">Artigos lidos essa semana</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2</div>
+          <p class="stat-label">Consultas agendadas</p>
+        </div>
+      </div>
+
+      <!-- Conteúdo principal -->
+      <div class="dashboard-grid">
+        <div>
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">📅 Próximos compromissos</h3>
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-meta">
+                <span><strong>Amanhã, 14h</strong></span>
+                <span class="badge badge-primary">Fono</span>
+              </div>
+              <p style="margin-top: var(--space-2); margin-bottom: 0;">Sessão de fonoaudiologia — Espaço Acolher</p>
+            </div>
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-meta">
+                <span><strong>Quinta, 10h</strong></span>
+                <span class="badge badge-warm">Psicóloga</span>
+              </div>
+              <p style="margin-top: var(--space-2); margin-bottom: 0;">Consulta de retorno — Dra. Ana Beatriz</p>
+            </div>
+            <div class="list-item" style="margin-bottom: 0;">
+              <div class="list-item-meta">
+                <span><strong>Sábado, 9h</strong></span>
+                <span class="badge badge-coral">Família</span>
+              </div>
+              <p style="margin-top: var(--space-2); margin-bottom: 0;">Encontro de pais TEA — Café PaisNeurodivergentes SP</p>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">📚 Recomendado para você agora</h3>
+            <p style="font-size: 0.9375rem;">Baseado na sua fase atual (Navegação):</p>
+            <ul class="moment-features" style="margin-top: var(--space-4);">
+              <li><a href="base-conhecimento.html#escola">"Escola recusou matrícula: o que fazer AGORA"</a></li>
+              <li><a href="base-conhecimento.html#direitos">"BPC: Benefício de Prestação Continuada"</a></li>
+              <li><a href="diretorio.html">"Escolas inclusivas verificadas perto de você"</a></li>
+            </ul>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">🔥 Discussões em alta no fórum</h3>
+            <div id="forum-list"></div>
+            <a href="forum.html" class="btn btn-secondary btn-block mt-4">Ver todas as discussões</a>
+          </article>
+        </div>
+
+        <!-- Coluna lateral -->
+        <div>
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">⚡ Ações rápidas</h3>
+            <div style="display: grid; gap: var(--space-2);">
+              <a href="monitoramento.html" class="btn btn-primary btn-block">📊 Registrar hoje</a>
+              <a href="forum.html" class="btn btn-secondary btn-block">✍️ Postar no fórum</a>
+              <a href="diretorio.html" class="btn btn-secondary btn-block">📍 Buscar serviço</a>
+              <a href="forum.html" class="btn btn-ghost btn-block">👨‍👩‍👧 Pedir mentoria</a>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">💚 Você não está sozinha</h3>
+            <p style="font-size: 0.9375rem;">Outras 47 famílias estão online agora na mesma fase que você. Entre no fórum e conheça algumas histórias.</p>
+            <div class="stats-row" style="margin-top: var(--space-4); margin-bottom: 0; gap: var(--space-3);">
+              <div class="stat-card" style="padding: var(--space-3);">
+                <div class="stat-value" style="font-size: 1.5rem;">47</div>
+                <p class="stat-label" style="font-size: 0.75rem; margin: 0;">Online agora</p>
+              </div>
+              <div class="stat-card" style="padding: var(--space-3);">
+                <div class="stat-value" style="font-size: 1.5rem;">128</div>
+                <p class="stat-label" style="font-size: 0.75rem; margin: 0;">Posts hoje</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">📊 Resumo desta semana</h3>
+            <ul class="persona-tasks" style="font-size: 0.875rem;">
+              <li>Você registrou 5 dias de monitoramento ✓</li>
+              <li>Leu 3 artigos da Base de Conhecimento</li>
+              <li>Salvou 2 novos serviços no Diretório</li>
+              <li>Participou de 4 discussões no fórum</li>
+              <li>Postou sua primeira dúvida anonimamente</li>
+            </ul>
+            <p class="form-help" style="margin-top: var(--space-4);">Você está fazendo um trabalho incrível cuidando da sua família. 💚</p>
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PaisNeurodivergentes • Logado como Maria Silva (Pais e Familiares)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderForum('forum-list', 3);
+    });
+  </script>
+</body>
+</html>

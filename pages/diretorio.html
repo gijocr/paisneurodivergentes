@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diretório de Serviços | PaisNeurodivergentes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo"><span class="logo-icon">👨‍👩‍👧</span><span>PaisNeurodivergentes</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><a href="diretorio.html" class="active">Diretório</a></li>
+          <li><a href="base-conhecimento.html">Conhecimento</a></li>
+          <li><a href="proposta-de-valor.html">Proposta de Valor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding: var(--space-12) 0 var(--space-8);">
+      <div class="container">
+        <span class="eyebrow">Funcionalidade P0 • Essencial</span>
+        <h1>📍 Diretório de Serviços</h1>
+        <p style="font-size: 1.125rem;">Encontre profissionais, clínicas e escolas especializadas perto de você. Todos os cadastros passam por curadoria.</p>
+
+        <!-- Search -->
+        <div class="search-bar" style="margin-top: var(--space-8); margin-bottom: var(--space-6);">
+          <input type="text" placeholder="🔍 Buscar por serviço, profissional ou cidade...">
+          <button class="btn btn-primary btn-small">Buscar</button>
+        </div>
+
+        <!-- Filters -->
+        <div data-chip-group>
+          <div class="chip-group">
+            <button class="chip active">Todos</button>
+            <button class="chip">Clínicas</button>
+            <button class="chip">Escolas</button>
+            <button class="chip">Fonoaudiólogo</button>
+            <button class="chip">Psicólogo</button>
+            <button class="chip">Neurologista</button>
+            <button class="chip">ABA</button>
+            <button class="chip">Terapia Ocupacional</button>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1.5fr; gap: var(--space-6); margin-top: var(--space-6);">
+          <!-- Map mock -->
+          <div class="feature-visual" style="min-height: 480px;">
+            <div style="text-align: center;">
+              <div style="font-size: 4rem; margin-bottom: var(--space-4);">🗺️</div>
+              <p style="margin: 0;">Mapa interativo com 6 resultados na sua região</p>
+              <p style="margin-top: var(--space-4); font-size: 0.875rem; color: var(--color-text-muted);">
+                Em produção: integração com Mapbox + clustering automático
+              </p>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div id="services-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona a curadoria -->
+    <section class="bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Curadoria</span>
+          <h2>Como validamos cada serviço</h2>
+          <p>Para ter o selo ✓ Verificado, o serviço passa por uma checagem em 3 camadas.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon">1</div>
+            <h4>Documentação</h4>
+            <p>CNPJ ativo, registro no conselho profissional (quando aplicável), alvará de funcionamento.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon warm">2</div>
+            <h4>Especialização</h4>
+            <p>Comprovação de formação ou experiência em neurodesenvolvimento (TEA, TDAH, altas habilidades).</p>
+          </div>
+          <div class="card">
+            <div class="card-icon coral">3</div>
+            <h4>Avaliação da comunidade</h4>
+            <p>Mínimo de 5 avaliações de famílias que usaram. Score mínimo de 4.5/5 sustentado por 6 meses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PaisNeurodivergentes • Diretório de Serviços curado por profissionais e famílias</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderServices('services-list');
+    });
+  </script>
+</body>
+</html>

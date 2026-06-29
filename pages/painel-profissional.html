@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Profissional | PaisNeurodivergentes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo"><span class="logo-icon">👨‍👩‍👧</span><span>PaisNeurodivergentes</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="painel-profissional.html" class="active">Meu painel</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><a href="base-conhecimento.html">Conhecimento</a></li>
+          <li><a href="diretorio.html">Diretório</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-avatar" style="background: linear-gradient(135deg, var(--color-secondary), #fbbf24);">👩‍⚕️</div>
+        <div class="sidebar-user-info">
+          <h4>Dra. Ana Beatriz</h4>
+          <p>CRP 06/12345 • Verificada ✓</p>
+        </div>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active"><span class="icon">🏠</span> Visão geral</a></li>
+        <li><a href="#"><span class="icon">👨‍👩‍👧</span> Famílias acompanhadas</a></li>
+        <li><a href="forum.html"><span class="icon">💬</span> Moderação do Fórum</a></li>
+        <li><a href="base-conhecimento.html"><span class="icon">📚</span> Curadoria de Conteúdo</a></li>
+        <li><a href="diretorio.html"><span class="icon">📍</span> Indicar serviços</a></li>
+        <li><a href="#"><span class="icon">📊</span> Relatórios clínicos</a></li>
+        <li><a href="#"><span class="icon">📹</span> Feedback por vídeo (V2)</a></li>
+        <li><a href="#"><span class="icon">🎓</span> Publicar treinamento</a></li>
+        <li><a href="#"><span class="icon">⚙️</span> Configurações</a></li>
+        <li><a href="../index.html"><span class="icon">🚪</span> Sair</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard-main" id="main">
+      <div class="dashboard-header">
+        <h1>Bem-vinda, Dra. Ana Beatriz 👩‍⚕️</h1>
+        <p>Seu papel aqui é validar informação, mediar o fórum e apoiar famílias. Obrigada por contribuir.</p>
+      </div>
+
+      <!-- KPIs -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-value">23</div>
+          <p class="stat-label">Famílias que você acompanha</p>
+          <span class="stat-change">+2 esta semana</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8</div>
+          <p class="stat-label">Artigos validados</p>
+          <span class="stat-change">100% aprovados</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">47</div>
+          <p class="stat-label">Posts moderados</p>
+          <span class="stat-change">3 sinalizados</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4.9</div>
+          <p class="stat-label">Avaliação das famílias</p>
+          <span class="stat-change">⭐ Excelente</span>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div>
+          <!-- Famílias acompanhadas -->
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">👨‍👩‍👧 Famílias acompanhadas (compartilharam dados)</h3>
+
+            <div class="list-item" style="margin-bottom: var(--space-3);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Família Silva • Pedro, 7 anos (TEA nível 1)</div>
+                  <div class="list-item-meta">
+                    <span>Fase 02 — Navegação</span>
+                    <span>14 dias de monitoramento</span>
+                  </div>
+                </div>
+                <span class="badge badge-success">Adesão 92%</span>
+              </div>
+              <p class="text-soft" style="font-size: 0.875rem;">Última crise há 5 dias. Padrão: sono &lt; 6h antecede crises.</p>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-small">📊 Ver relatório</button>
+                <button class="btn btn-secondary btn-small">💬 Enviar mensagem</button>
+                <button class="btn btn-ghost btn-small">📹 Pedir vídeo (V2)</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: var(--space-3);">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Família Mendes • Sofia, 9 anos (TDAH)</div>
+                  <div class="list-item-meta">
+                    <span>Fase 03 — Gestão</span>
+                    <span>28 dias de monitoramento</span>
+                  </div>
+                </div>
+                <span class="badge badge-warm">Adesão 75%</span>
+              </div>
+              <p class="text-soft" style="font-size: 0.875rem;">Adesão à medicação caindo aos fins de semana. Possível pauta para próxima consulta.</p>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-small">📊 Ver relatório</button>
+                <button class="btn btn-secondary btn-small">💬 Enviar mensagem</button>
+                <button class="btn btn-ghost btn-small">📹 Pedir vídeo (V2)</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: 0;">
+              <div class="list-item-header">
+                <div>
+                  <div class="list-item-title">Família Rocha • Miguel, 4 anos (TEA nível 2)</div>
+                  <div class="list-item-meta">
+                    <span>Fase 01 — Descoberta</span>
+                    <span>2 dias de monitoramento</span>
+                  </div>
+                </div>
+                <span class="badge badge-coral">Recém-chegado</span>
+              </div>
+              <p class="text-soft" style="font-size: 0.875rem;">Família em fase inicial. Detectada necessidade de acolhimento emocional prioritário.</p>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-small">📊 Ver relatório</button>
+                <button class="btn btn-secondary btn-small">💬 Enviar mensagem</button>
+                <button class="btn btn-ghost btn-small">📹 Pedir vídeo (V2)</button>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-ghost btn-block mt-4">Ver todas as 23 famílias</a>
+          </article>
+
+          <!-- Moderação -->
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">💬 Posts para mediar</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-soft); margin-bottom: var(--space-4);">Você é a profissional designada para responder quando a comunidade sinaliza.</p>
+
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="forum-post-header">
+                <div class="forum-avatar" style="background: linear-gradient(135deg, var(--color-accent), #fca5a5);">J</div>
+                <div class="forum-meta">
+                  <strong>Juliana R. • Há 2 horas</strong>
+                  <time>Sinalizado por 4 pais</time>
+                </div>
+                <span class="badge badge-coral">Verificar</span>
+              </div>
+              <p style="font-size: 0.9375rem;">"Estou usando método X para 'curar' o autismo do meu filho. Funciona, posso compartilhar?"</p>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">Responder como moderadora</button>
+                <button class="btn btn-ghost btn-small">Marcar como adequado</button>
+                <button class="btn btn-ghost btn-small">Remover post</button>
+              </div>
+            </div>
+
+            <div class="list-item" style="margin-bottom: 0;">
+              <div class="forum-post-header">
+                <div class="forum-avatar">R</div>
+                <div class="forum-meta">
+                  <strong>Roberto M. • Há 5 horas</strong>
+                  <time>Mensagem urgente</time>
+                </div>
+                <span class="badge badge-warm">Apoio</span>
+              </div>
+              <p style="font-size: 0.9375rem;">"Escola particular recusou matrícula por causa do laudo. O que fazer? Alguém já passou por isso?"</p>
+              <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+                <button class="btn btn-primary btn-small">Responder com orientação técnica</button>
+                <button class="btn btn-ghost btn-small">Compartilhar artigo jurídico</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Coluna lateral -->
+        <div>
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">📚 Curadoria de conteúdo</h3>
+            <p style="font-size: 0.875rem;">3 artigos aguardam sua validação técnica:</p>
+
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-title" style="font-size: 0.9375rem;">"TEA e sensorialidade: como entender hipersensibilidade"</div>
+              <div class="list-item-meta">
+                <span>Por: Dr. Marcos Pereira</span>
+                <span class="badge badge-warm">Pendente</span>
+              </div>
+              <button class="btn btn-secondary btn-small mt-4">Revisar artigo</button>
+            </div>
+
+            <div class="list-item" style="margin-bottom: var(--space-2);">
+              <div class="list-item-title" style="font-size: 0.9375rem;">"TDAH em adultos: diagnóstico tardio"</div>
+              <div class="list-item-meta">
+                <span>Por: Você (rascunho)</span>
+                <span class="badge badge-warm">Rascunho</span>
+              </div>
+              <button class="btn btn-secondary btn-small mt-4">Continuar edição</button>
+            </div>
+
+            <div class="list-item" style="margin-bottom: 0;">
+              <div class="list-item-title" style="font-size: 0.9375rem;">"Manejo de crise sensorial em casa"</div>
+              <div class="list-item-meta">
+                <span>Por: TO Camila Torres</span>
+                <span class="badge badge-warm">Pendente</span>
+              </div>
+              <button class="btn btn-secondary btn-small mt-4">Revisar artigo</button>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">⚡ Ações rápidas</h3>
+            <div style="display: grid; gap: var(--space-2);">
+              <a href="forum.html" class="btn btn-primary btn-block">💬 Moderar fórum</a>
+              <a href="base-conhecimento.html" class="btn btn-secondary btn-block">📚 Validar artigos</a>
+              <a href="diretorio.html" class="btn btn-secondary btn-block">📍 Indicar colega</a>
+              <a href="#" class="btn btn-ghost btn-block">📊 Relatório mensal</a>
+            </div>
+          </article>
+
+          <article class="card" style="margin-top: var(--space-6);">
+            <h3 style="margin-bottom: var(--space-4);">📈 Sua contribuição no mês</h3>
+            <ul class="persona-tasks" style="font-size: 0.875rem;">
+              <li>8 artigos validados e publicados</li>
+              <li>47 posts moderados</li>
+              <li>3 famílias novas atribuídas a você</li>
+              <li>1 webinar sobre acolhimento realizado</li>
+              <li>Selo "Guardiã da Comunidade" conquistado 🏅</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PaisNeurodivergentes • Logada como Dra. Ana Beatriz (Profissional de Saúde)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

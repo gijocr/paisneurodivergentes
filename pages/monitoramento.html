@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoramento | PaisNeurodivergentes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo"><span class="logo-icon">👨‍👩‍👧</span><span>PaisNeurodivergentes</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="monitoramento.html" class="active">Monitoramento</a></li>
+          <li><a href="diretorio.html">Diretório</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><a href="proposta-de-valor.html">Proposta de Valor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding: var(--space-12) 0 var(--space-8);">
+      <div class="container">
+        <span class="eyebrow">Funcionalidade P2 • Desejável</span>
+        <h1>📊 Monitoramento de Rotina &amp; Crises</h1>
+        <p style="font-size: 1.125rem;">Registre em segundos. Identifique padrões. Compartilhe com seu profissional de referência.</p>
+
+        <!-- KPIs -->
+        <div class="stats-row" style="margin-top: var(--space-8);">
+          <div class="stat-card">
+            <div class="stat-value">14</div>
+            <p class="stat-label">Dias registrados</p>
+            <span class="stat-change">+3 essa semana</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">3</div>
+            <p class="stat-label">Crises no mês</p>
+            <span class="stat-change" style="background: rgba(239, 68, 68, 0.1); color: var(--color-danger);">-50% vs. mês anterior</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">92%</div>
+            <p class="stat-label">Adesão à medicação</p>
+            <span class="stat-change">Meta atingida ✓</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">7.8h</div>
+            <p class="stat-label">Sono médio</p>
+            <span class="stat-change">Estável</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--space-6); margin-top: var(--space-8);">
+          <!-- Form -->
+          <article class="card">
+            <h3 style="margin-bottom: var(--space-4);">✍️ Novo registro</h3>
+            <form id="monitoring-form">
+              <div class="form-group">
+                <label class="form-label" for="m-date">Data</label>
+                <input class="form-input" type="date" name="date" id="m-date" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="m-mood">Humor predominante</label>
+                <select class="form-select" name="mood" id="m-mood" required>
+                  <option value="Feliz">😊 Feliz</option>
+                  <option value="Calmo">😌 Calmo</option>
+                  <option value="Agitado">😟 Agitado</option>
+                  <option value="Triste">😢 Triste</option>
+                  <option value="Ansioso">😰 Ansioso</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="m-sleep">Sono (horas)</label>
+                <input class="form-input" type="text" name="sleep" id="m-sleep" placeholder="Ex: 8h ou 7h30" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="m-notes">Observações do dia</label>
+                <textarea class="form-textarea" name="notes" id="m-notes" placeholder="Algo relevante? Gatilhos? Conquistas?"></textarea>
+                <p class="form-help">Use este espaço para o que quiser lembrar. Visível apenas para você e quem você autorizar.</p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Salvar registro</button>
+            </form>
+          </article>
+
+          <!-- Histórico -->
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-6); flex-wrap: wrap; gap: var(--space-3);">
+              <h3 style="margin: 0;">Histórico</h3>
+              <div style="display: flex; gap: var(--space-2);">
+                <button class="btn btn-ghost btn-small">📊 Gráfico</button>
+                <button class="btn btn-ghost btn-small">📄 Exportar PDF</button>
+              </div>
+            </div>
+
+            <div data-chip-group>
+              <div class="chip-group">
+                <button class="chip active">7 dias</button>
+                <button class="chip">30 dias</button>
+                <button class="chip">90 dias</button>
+                <button class="chip">Apenas crises</button>
+              </div>
+            </div>
+
+            <div id="monitoring-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Padrões detectados -->
+    <section class="bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Inteligência de padrões (V2)</span>
+          <h2>O que os seus dados estão te dizendo</h2>
+          <p>Em breve: correlação automática entre eventos e crises.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon warm">📈</div>
+            <h4>Padrão detectado</h4>
+            <p>2 das 3 crises do mês aconteceram <strong>após dias com menos de 6h de sono</strong>. Sono é um fator crítico.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon coral">🎯</div>
+            <h4>Gatilho provável</h4>
+            <p>As crises de quarta-feira coincidem com o dia de avaliação escolar. Pressão avaliativa pode ser gatilho.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✓</div>
+            <h4>Evolução positiva</h4>
+            <p>Adesão à medicação subiu de 78% para 92% nas últimas 4 semanas. Redução de 50% nas crises.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PaisNeurodivergentes • Monitoramento — dados criptografados, você controla quem vê</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set today's date as default
+      const dateInput = document.getElementById('m-date');
+      if (dateInput) dateInput.valueAsDate = new Date();
+      renderMonitoring();
+    });
+  </script>
+</body>
+</html>
